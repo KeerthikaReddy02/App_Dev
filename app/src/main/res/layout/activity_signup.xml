@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="290dp"
-        android:layout_height="437dp"
+        android:layout_width="392dp"
+        android:layout_height="653dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="4dp"
         android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,23 +70,25 @@
         android:id="@+id/contact"
         android:layout_width="251dp"
         android:layout_height="42dp"
+        android:layout_marginTop="232dp"
         android:background="@drawable/rounded_corner"
         android:hint="Contact"
         android:paddingLeft="20dp"
+        android:singleLine="true"
         android:textColor="#FFFFFF"
+
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/college"
         android:layout_width="251dp"
         android:layout_height="42dp"
         android:layout_marginTop="296dp"
+        android:singleLine="true"
         android:background="@drawable/rounded_corner"
         android:hint="College"
         android:paddingLeft="20dp"
@@ -101,14 +103,15 @@
         android:id="@+id/branch"
         android:layout_width="251dp"
         android:layout_height="42dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginTop="364dp"
         android:background="@drawable/rounded_corner"
         android:hint="Branch"
         android:paddingLeft="20dp"
+        android:singleLine="true"
         android:textColor="#FFFFFF"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,7 +119,7 @@
         android:id="@+id/button4"
         android:layout_width="134dp"
         android:layout_height="43dp"
-        android:layout_marginStart="96dp"
+        android:layout_marginStart="136dp"
         android:alpha="0.5"
         android:background="@drawable/rounded_corner"
         android:gravity="center"
@@ -127,5 +130,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.691" />
 </androidx.constraintlayout.widget.ConstraintLayout>

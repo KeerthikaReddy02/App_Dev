@@ -16,7 +16,8 @@ import android.widget.Toast;
 public class task2 extends AppCompatActivity {
     private Button buttonmove;
     EditText pass1,pass2,password1;
-    String password,p;
+    EditText email;
+    String password,p,email1;
     int flag=1;
     int flag1=0;
     @Override
@@ -33,6 +34,8 @@ public class task2 extends AppCompatActivity {
             email1.setText(email);
             password1.setText(password);
         }
+        email=findViewById(R.id.email);
+         email1=email.getText().toString().trim();
         pass1 = findViewById(R.id.password);
         pass2 = findViewById(R.id.password2);
         String p1 = pass1.getText().toString().trim();
@@ -73,7 +76,10 @@ public class task2 extends AppCompatActivity {
                          flag=1;
                      }
                     if ((pass1.getText().toString().trim().equals(pass2.getText().toString().trim()))&& flag == 1) {
+                        Bundle bundle1=new Bundle();
                         Intent intent = new Intent(task2.this, activity_signup.class);
+                        bundle1.putString("email",email1);
+                        intent.putExtras(bundle1);
                         startActivity(intent);
                     }
 
