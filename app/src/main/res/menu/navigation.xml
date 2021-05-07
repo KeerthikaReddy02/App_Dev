@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_1"
+        />
+    <item
+        android:title="renew"
+        android:id="@+id/renew"
+        android:icon="@drawable/ic_renew_1"
+
+
+        />
+    <item
+        android:title="plus"
+        android:id="@+id/plus"
+        android:icon="@drawable/ic_plus_1"
+        />
+
+    <item
+        android:title="Open book"
+        android:id="@+id/open_book"
+        android:icon="@drawable/ic_open_book_1"  />
+    <item
+        android:title="user"
+        android:id="@+id/user"
+        android:icon="@drawable/ic_user_1"
+        />
+</menu>
