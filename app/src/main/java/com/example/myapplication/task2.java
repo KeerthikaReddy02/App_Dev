@@ -17,7 +17,7 @@ public class task2 extends AppCompatActivity {
     private Button buttonmove;
     EditText pass1,pass2,password1;
     EditText email;
-    String password,p,email1;
+    String password,p,email1,p1;
     int flag=1;
     int flag1=0;
     @Override
@@ -38,7 +38,7 @@ public class task2 extends AppCompatActivity {
          email1=email.getText().toString().trim();
         pass1 = findViewById(R.id.password);
         pass2 = findViewById(R.id.password2);
-        String p1 = pass1.getText().toString().trim();
+         p1 = pass1.getText().toString().trim();
         String p2 = pass2.getText().toString().trim();
 
         buttonmove = findViewById(R.id.button4);
@@ -79,6 +79,7 @@ public class task2 extends AppCompatActivity {
                         Bundle bundle1=new Bundle();
                         Intent intent = new Intent(task2.this, activity_signup.class);
                         bundle1.putString("email",email1);
+                        bundle1.putString("password",p1);
                         intent.putExtras(bundle1);
                         startActivity(intent);
                     }
