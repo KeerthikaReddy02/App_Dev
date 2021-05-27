@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity4 extends AppCompatActivity {
     String contact,college,branch,email;
@@ -43,6 +45,8 @@ public class MainActivity4 extends AppCompatActivity {
             }
         });
     }
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener navListener=new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
